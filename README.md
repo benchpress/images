@@ -1,5 +1,5 @@
 
-# Benchpress Images
+# Images
 
 Dockerfiles etc. used to build containers for benchpress.
 
@@ -9,6 +9,6 @@ See Makefile for available builds
 
 Much inspiration taken from [drone continuous integration server images](https://github.com/drone/images/)
 
-# License
+## License
 
 Apache 2.0
