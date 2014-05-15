@@ -1,0 +1,58 @@
+#!/bin/bash
+
+set -x
+set -e
+
+# update
+sudo apt-get -qq update
+
+# essential
+sudo apt-get -y install git git-core subversion mercurial bzr fossil xvfb socat wget
+
+# utilities
+sudo apt-get -y install wget zip unzip p7zip-full
+
+# gcc + build essential
+./gcc
+./build-essential
+./scons
+
+# shed load of libraries
+./libcurl
+./libffi
+./libgdbm
+./libmagick
+./libmemcache
+./libmysql
+./libncurses
+./libossp-uuid
+./libpq
+./libqt4
+./libreadline
+./libsqlite
+./libssl
+./libxml
+./libyaml
+./libzmq
+./zlib
+
+# database clients
+./mysql-cli
+./postgres-client
+
+# WARNING: ITEMS BELOW WILL CHANGE OVER TIME
+
+# browsers
+./chromium
+./firefox
+./chrome
+./phantomjs
+
+# base languages
+./openjdk
+./python
+./nodejs
+./ruby
+./golang
+
+exit 0
