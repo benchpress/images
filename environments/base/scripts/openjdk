@@ -1,7 +1,8 @@
 #!/bin/bash -e
 
 # install openjdk7 by default
-sudo apt-get -y install openjdk-7-jdk
+# --no-install-recommends to workaround fuse issue
+sudo apt-get -y install --no-install-recommends openjdk-7-jdk
 
 # install commonly used Java build tools
 sudo apt-get -y install ant ant-contrib ivy maven
