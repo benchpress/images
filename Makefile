@@ -6,8 +6,7 @@ docker-clean:
 	docker rmi $(docker images -a | grep "^<none>" | awk '{print $3}')
 
 base:
-	docker build -t -rm benchpress/base environments/base/
+	docker build -t benchpress/base environments/base/
 
 
-
-
+.PHONY: default docker-clean base
