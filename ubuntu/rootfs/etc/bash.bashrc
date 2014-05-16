@@ -10,7 +10,7 @@
 
 # Load default environment scripts to be used by benchpress
 if [ -d /etc/benchpress.d ]; then
-  for i in /etc/benchpress.d/*.sh; do
+  for i in /etc/benchpress.d/*; do
     if [ -r $i ]; then
       . $i
     fi
