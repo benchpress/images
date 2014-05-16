@@ -8,7 +8,7 @@ pushd /tmp
 sudo apt-get install -y build-essential chrpath git-core libssl-dev libfontconfig1-dev
 
 # download phantomjs and decompress
-wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
+wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2 --quiet
 tar xjf phantomjs-1.9.7-linux-x86_64.tar.bz2
 
 # install binary

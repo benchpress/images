@@ -14,7 +14,7 @@ sudo apt-get -y install default-jdk
 pushd /tmp
 
 # download + decompress grade
-wget https://services.gradle.org/distributions/gradle-1.12-bin.zip
+wget https://services.gradle.org/distributions/gradle-1.12-bin.zip --quiet
 unzip -q gradle-1.12-bin.zip
 
 # install
