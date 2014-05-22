@@ -10,7 +10,7 @@ sudo apt-get -qq update
 sudo apt-get -y install git git-core subversion mercurial bzr fossil xvfb socat
 
 # utilities
-sudo apt-get -y install wget curl zip unzip p7zip-full
+sudo apt-get -y install wget curl zip unzip p7zip-full man
 
 # gcc + build essential
 ./gcc
